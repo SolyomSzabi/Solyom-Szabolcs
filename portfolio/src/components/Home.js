@@ -1,12 +1,12 @@
 import '../css/Home.css'
+import Container from '@mui/material/Container';
 
 const Home = () => {
   return (
-    <section className="about" id="about">
-      <h1>Hey, I'm Sólyom Szabolcs-Csaba,<br/>But you can call me Szabi</h1>
-      <h2>I'm a Junior Full-Stack Developer</h2>
-    </section>
-  );
+    <Container maxWidth="sm">      <p>Hi, I'm</p>
+      < h1 > Sólyom Szabolcs.</h1 >
+      <h2>I'm a Junior Full-Stack Developer.</h2>
+    </Container>);
 };
 
 export default Home;
