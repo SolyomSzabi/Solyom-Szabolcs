@@ -1,18 +1,83 @@
-nav {
-  background-color: #333;
-}
-
-nav ul {
+.navbar {
+  background-color: #159A9C;
+  height: 60px;
   display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+      justify-content: flex-end;
+  padding: 0 2rem;
+  position: relative;
 }
 
-nav ul li a {
-  color: #fff;
-  display: block;
-  padding: 1rem;
+.navbar-brand {
+  color: #159A9C;
+  font-size: 1.5rem;
+  font-weight: bold;
   text-decoration: none;
+}
+
+.navbar-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #333;
+  width: 100%;
+}
+
+.navbar-item {
+  margin: 1rem 0;
+  text-decoration: none;
+    font-size: 1.2rem;
+  font-weight: bold;
+  color:#002333;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  display: block;
+}
+
+.navbar-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-toggler {
+  background-color: #002333;
+  border: none;
+  color: #159A9C;
+  font-size: 1.5rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.navbar-menu.is-active {
+  background-color:#159A9C;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+  .navbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    top: auto;
+    right: auto;
+    background-color: transparent;
+    width: auto;
+  }
+
+  .navbar-item {
+    margin: 0 1rem;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
 }
